@@ -1,6 +1,8 @@
 <?php
 function enqueue_externals() {
     wp_enqueue_style('custom-style', get_stylesheet_directory_uri() . '/style.css' );
+
+    wp_enqueue_script('main-script', get_stylesheet_directory_uri() . '/assets/script/main.js' );
 }
 add_action('wp_enqueue_scripts', 'enqueue_externals');
 

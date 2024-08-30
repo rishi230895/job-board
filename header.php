@@ -9,7 +9,7 @@
   <body>
     <!-- Header start  -->
 
-    <header class="container">
+    <header class="container cstm-header-container">
       <div class="cstm-header inner-container">
         <a href="#" class="logo">
           <img src="<?php echo get_stylesheet_directory_uri(). '/assets/images/Logo-Final.png' ?>" alt="APRN Jobs Logo" />
