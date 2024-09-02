@@ -349,7 +349,11 @@
   .social-media-tab a:hover{
     scale:1.4;
   }
-  
+  .custom-flex-footer{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+  }
   @media only screen and (width <= 568px) {
     .cstm-header .logo img {
       width: 80px;

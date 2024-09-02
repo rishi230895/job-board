@@ -31,7 +31,9 @@ $copy_right_text = get_field('copy_right_text', 'option');
                     wp_nav_menu(array(
                         'menu' => 'footer-menu',
                         'theme_location' => 'secondary-menu',
-                        'container' => false,                )
+                        'container' => false, 
+                        'menu_class' => 'custom-flex-footer',
+                       )
                     );
                 ?>
             <!-- Dymanic Footer Menu Start   -->
