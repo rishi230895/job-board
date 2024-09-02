@@ -18,17 +18,31 @@
         <p class="align copyright">&copy; Copyright APRNJobs.org - All Rights Reserved 2024</p>
     </div>
 </footer> -->
+<?php 
+$copy_right_text = get_field('copy_right_text', 'option');
 
+?>
 <footer class="container">
     <div class="inner-container cstm-footer">
         <div class="footer-links align terms">
-            <a href="#">Contact</a>  
-         <a href="#">Terms & Conditions</a> 
-            <a href="#">Cookies/User</a>
+
+            <!-- Dymanic Footer Menu Start   -->
+                <?php
+                    wp_nav_menu(array(
+                        'menu' => 'footer-menu',
+                        'theme_location' => 'secondary-menu',
+                        'container' => false,                )
+                    );
+                ?>
+            <!-- Dymanic Footer Menu Start   -->
+
         </div>
-        <p class="align copyright">&copy; Copyright APRNJobs.org - All Rights Reserved 2024</p>
+        
+        <?php if(!empty($copy_right_text)){ ?>
+            <p class="align copyright"><?php echo $copy_right_text; ?></p>
+        <?php } ?>
     </div>
 </footer>
 
 </body>
-</html>
+</html> 
